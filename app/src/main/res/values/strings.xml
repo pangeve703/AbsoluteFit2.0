@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Absolute Fit</string>
+    <string name="bmi_name">BMI Calculator</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="age">Age :</string>
+    <string name="height">Height :</string>
+    <string name="weight">Weight :</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="result">Result :</string>
+    <string name="under_weight">Under Weight</string>
+    <string name="a"><![CDATA[<20]]></string>
+    <string name="normal">Normal</string>
+    <string name="b">20 - 25</string>
+    <string name="over_weight">Over Weight</string>
+    <string name="c">25 - 30</string>
+    <string name="obese">Obese</string>
+    <string name="d">30 - 40</string>
+    <string name="morbidly_obese">Morbidly Obese</string>
+    <string name="e"><![CDATA[>40]]></string>
+    <string name="progress_report">Progress Report</string>
+</resources>
