@@ -35,6 +35,12 @@ class MainActivity : AppCompatActivity() {
             val intentGoToMain2Activity = Intent(this,Main2Activity::class.java)
             startActivity(intentGoToMain2Activity)
         }
+        val infoButton: ImageButton = findViewById(R.id.info_btn) as ImageButton
+        infoButton.setOnClickListener {
+            Toast.makeText(this@MainActivity, "TESTING BUTTON CLICK 1", Toast.LENGTH_SHORT).show()
+            val intentGoToMapsActivity = Intent(this,MapsActivity::class.java)
+            startActivity(intentGoToMapsActivity)
+        }
 
 
     }
