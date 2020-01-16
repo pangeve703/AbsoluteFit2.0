@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "373668466053",
+    "firebase_url": "https://absolutefit20.firebaseio.com",
+    "project_id": "absolutefit20",
+    "storage_bucket": "absolutefit20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373668466053:android:7dccb25a9a8c3aa92948ec",
+        "android_client_info": {
+          "package_name": "com.example.absolutefit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373668466053-itjcsjb4sdhechnnmjklibhiig0lbc1g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.absolutefit",
+            "certificate_hash": "d3dea539fe1690b0114a6888327a27af495ff5da"
+          }
+        },
+        {
+          "client_id": "373668466053-dfnq5mn3pig322uol92c5d8bgtb3p94k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY240GqlnS0A8x_hxxd4aZlHsCe4I8E3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373668466053-dfnq5mn3pig322uol92c5d8bgtb3p94k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
