@@ -38,6 +38,9 @@
         <activity
             android:name=".InfoActivity"
             android:label="Center Info" />
+        <activity
+            android:name=".TimerActivity"
+            android:label="Timer" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
