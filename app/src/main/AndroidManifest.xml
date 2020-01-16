@@ -35,6 +35,9 @@
         <activity
             android:name=".CalculateBMI"
             android:label="@string/bmi_name" />
+        <activity
+            android:name=".InfoActivity"
+            android:label="Center Info" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

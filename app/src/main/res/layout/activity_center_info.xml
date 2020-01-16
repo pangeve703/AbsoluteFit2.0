@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <include
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar"
+        android:layout_width="413dp"
+        android:layout_height="56dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar3"
+        app:srcCompat="@drawable/phone_icon" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="340dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1" />
+
+    <ImageView
+        android:id="@+id/bar1"
+        android:layout_width="413dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@drawable/side_nav_bar" />
+
+    <ImageView
+        android:id="@+id/bar2"
+        android:layout_width="413dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_us2"
+        app:srcCompat="@drawable/side_nav_bar" />
+
+    <ImageView
+        android:id="@+id/bar3"
+        android:layout_width="413dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_btn"
+        app:srcCompat="@drawable/side_nav_bar" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bar1" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:text="Office"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bar2" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bar3" />
+
+    <TextView
+        android:id="@+id/about_us2"
+        android:layout_width="370dp"
+        android:layout_height="101dp"
+        android:paddingTop="10dp"
+        android:text="AbsoluteFit App is developed to bring the gym back to you. Booking Classes and self- training has never been easier. The app does everything for you with the click of a button"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar1" />
+
+    <Button
+        android:id="@+id/address_btn"
+        android:layout_width="375dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        android:text="Kampus Utama, Jalan Genting Kelang, 53300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar2" />
+
+    <Button
+        android:id="@+id/phone_no"
+        android:layout_width="226dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:background="#00FFFFFF"
+        android:text="03-4145 0123"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toEndOf="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/bar3" />
+
+    <Button
+        android:id="@+id/email_add"
+        android:layout_width="226dp"
+        android:layout_height="47dp"
+        android:background="#00FFFFFF"
+        android:text="info@tarc.edu.my"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/email_image"
+        app:layout_constraintTop_toBottomOf="@+id/phone_no"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <ImageView
+        android:id="@+id/email_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        app:layout_constraintVertical_bias="0.388"
+        app:srcCompat="@drawable/email_icon" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
