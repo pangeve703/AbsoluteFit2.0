@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         val timerButton: ImageButton = findViewById(R.id.news_btn) as ImageButton
         timerButton.setOnClickListener {
             //Toast.makeText(this@MainActivity, "TESTING BUTTON CLICK 1", Toast.LENGTH_SHORT).show()
-            val intentGoToTimerActivity= Intent(this,TimerActivity::class.java)
+            val intentGoToTimerActivity= Intent(this,RecipeActivity::class.java)
             startActivity(intentGoToTimerActivity)
         }
 

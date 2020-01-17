@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="275dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginEnd="24dp"
+                android:background="#00FFFFFF"
+                android:text="Sugar Cookies"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="275dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginEnd="16dp"
+                android:background="#00FFFFFF"
+                android:text="Stir Fried Rice with Chinese Sausage"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button2"
+                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button2"
+                app:srcCompat="@drawable/friedrice" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar4"
+                android:layout_width="409dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="275dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginEnd="16dp"
+                android:background="#00FFFFFF"
+                android:text="Five-Spice Chicken Wings Recipe"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button1"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/chicken" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="275dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginEnd="16dp"
+                android:background="#00FFFFFF"
+                android:text="Korean Rice Cake"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button6"
+                app:layout_constraintEnd_toStartOf="@+id/button6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button6"
+                app:srcCompat="@drawable/dumpcake" />
+
+            <ImageView
+                android:id="@+id/image7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button7"
+                app:layout_constraintEnd_toStartOf="@+id/button7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button7"
+                app:srcCompat="@drawable/cookies" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="275dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginEnd="16dp"
+                android:background="#00FFFFFF"
+                android:text="Dump Cake"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button4"
+                app:layout_constraintEnd_toStartOf="@+id/button4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button4"
+                app:srcCompat="@drawable/ribs" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="275dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginEnd="16dp"
+                android:background="#00FFFFFF"
+                android:text="Grilled Deviled Chickens Under a Brick"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button5"
+                app:layout_constraintEnd_toStartOf="@+id/button5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button5"
+                app:srcCompat="@drawable/korean" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button3"
+                app:layout_constraintEnd_toStartOf="@+id/button3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button3"
+                app:srcCompat="@drawable/friedchicke" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="275dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginEnd="16dp"
+                android:background="#00FFFFFF"
+                android:text="Chinese Pork Ribs"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
