@@ -13,6 +13,7 @@
     <LinearLayout
         android:layout_width="418dp"
         android:layout_height="677dp"
+        android:background="#579164DF"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +30,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:text="Name" />
+                android:text="Name"
+                android:textColor="@color/black" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -47,15 +49,15 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayoutEmail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
-                android:text="Email" />
+                android:text="Email"
+                android:textColor="@color/black" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -80,7 +82,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:text="Password" />
+                android:text="Password"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -104,7 +107,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:text="Comfirm Password" />
+                android:text="Comfirm Password"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -124,7 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:background="@color/green"
-            android:text="Register"/>
+            android:text="Register" />
 
         <TextView
             android:id="@+id/textViewLinkLogin"

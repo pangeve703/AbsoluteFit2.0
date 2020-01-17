@@ -24,27 +24,27 @@ class MainActivity : AppCompatActivity() {
 
         val bmiButton: ImageButton = findViewById(R.id.calbmi_btn) as ImageButton
         bmiButton.setOnClickListener {
-            Toast.makeText(this@MainActivity, "TESTING BUTTON CLICK 1", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@MainActivity, "TESTING BUTTON CLICK 1", Toast.LENGTH_SHORT).show()
             val intentGoToCalculateBMI = Intent(this,CalculateBMI::class.java)
             startActivity(intentGoToCalculateBMI)
         }
 
         val signUpButton: ImageButton = findViewById(R.id.signUp_btn) as ImageButton
         signUpButton.setOnClickListener {
-            Toast.makeText(this@MainActivity, "TESTING BUTTON CLICK 1", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@MainActivity, "TESTING BUTTON CLICK 1", Toast.LENGTH_SHORT).show()
             val intentGoToMain2Activity = Intent(this,Main2Activity::class.java)
             startActivity(intentGoToMain2Activity)
         }
         val infoButton: ImageButton = findViewById(R.id.info_btn) as ImageButton
         infoButton.setOnClickListener {
-            Toast.makeText(this@MainActivity, "TESTING BUTTON CLICK 1", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@MainActivity, "TESTING BUTTON CLICK 1", Toast.LENGTH_SHORT).show()
             val intentGoToInfoActivity= Intent(this,InfoActivity::class.java)
             startActivity(intentGoToInfoActivity)
         }
 
         val timerButton: ImageButton = findViewById(R.id.news_btn) as ImageButton
         timerButton.setOnClickListener {
-            Toast.makeText(this@MainActivity, "TESTING BUTTON CLICK 1", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@MainActivity, "TESTING BUTTON CLICK 1", Toast.LENGTH_SHORT).show()
             val intentGoToTimerActivity= Intent(this,TimerActivity::class.java)
             startActivity(intentGoToTimerActivity)
         }
