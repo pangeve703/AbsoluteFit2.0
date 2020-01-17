@@ -18,6 +18,7 @@ class RegisterActivity : AppCompatActivity() {
     lateinit var name_register: EditText
     lateinit var email_register: EditText
     lateinit var password_register: EditText
+    lateinit var confirmPwd:EditText
     lateinit var emailPattern: String
     lateinit var context: Context
     lateinit var btnRegister:Button
@@ -35,6 +36,7 @@ class RegisterActivity : AppCompatActivity() {
         name_register = findViewById(R.id.name_inputs)
         email_register =findViewById(R.id.textInputEditTextEmail)
         password_register = findViewById(R.id.password)
+        confirmPwd = findViewById(R.id.conPwd)
         btnRegister= findViewById(R.id.registerBtn) as Button
         goToLoginBtn = findViewById(R.id.textViewLinkLogin)
         btnRegister.setOnClickListener(){
@@ -50,7 +52,7 @@ class RegisterActivity : AppCompatActivity() {
         val name = name_register.text.toString().trim()
         val emailR = email_register.text.toString().trim()
         val passwordR = password_register.text.toString().trim()
-
+        val conPwdR = confirmPwd.text.toString().trim()
         if(name.isEmpty()){
             name_register.error = "Please enter your name"
             return
@@ -63,13 +65,19 @@ class RegisterActivity : AppCompatActivity() {
             password_register.error = "Please enter your password"
             return
         }
-
+        if(conPwdR.isEmpty()){
+            confirmPwd.error = "Please enter your password again"
+            return
+        }
+        if(!conPwdR.equals(passwordR)){
+            confirmPwd.error = "The password is not match"
+        }
         try {
             context = this
             emailPattern = "[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\\.+[a-z]+"
 
 
-            if (email_register.text.toString().trim { it <= ' ' }.matches(emailPattern.toRegex())) {
+            if (email_register.text.toString().trim { it <= ' ' }.matches(emailPattern.toRegex())&&conPwdR.equals(passwordR)) {
 
                 val ref = FirebaseDatabase.getInstance().getReference("Account")
                 val userId = ref.push().key
@@ -80,7 +88,7 @@ class RegisterActivity : AppCompatActivity() {
                     val intentGoToMainActivity = Intent(context, MainActivity::class.java)
                     context.startActivity(intentGoToMainActivity)
                 }
-            } else {
+            } else if(!email_register.text.toString().trim { it <= ' ' }.matches(emailPattern.toRegex())){
                 Toast.makeText(context, "Please enter valid email", Toast.LENGTH_LONG).show()
             }
 
