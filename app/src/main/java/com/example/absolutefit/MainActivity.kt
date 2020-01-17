@@ -73,7 +73,10 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intentGotoRegisterActivity)
                 true
             }
-
+            R.id.action_settings ->{
+                Toast.makeText(this@MainActivity, "Sign out successfully", Toast.LENGTH_SHORT).show()
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
 

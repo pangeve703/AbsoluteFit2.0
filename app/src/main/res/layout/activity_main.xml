@@ -10,19 +10,21 @@
     <include
         android:id="@+id/toolbar1"
         layout="@layout/toolbar" />
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#579164DF">
 
         <GridLayout
-            android:columnCount="2"
-            android:rowCount="3"
-            android:alignmentMode="alignMargins"
-            android:columnOrderPreserved="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:orientation="vertical"
             android:padding="0dp"
-            android:orientation="vertical">
+            android:rowCount="6">
 
 
             <ImageButton
@@ -33,6 +35,15 @@
                 android:layout_marginTop="0dp"
                 android:src="@drawable/calories" />
 
+            <TextView
+                android:id="@+id/signUp_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Sign Up a Class"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
             <ImageButton
                 android:id="@+id/calbmi_btn"
                 android:layout_width="186dp"
@@ -42,6 +53,16 @@
                 android:layout_marginEnd="0dp"
                 android:src="@drawable/q" />
 
+            <TextView
+                android:id="@+id/calbmi_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="2dp"
+                android:text="Calculate BMI"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
             <ImageButton
                 android:id="@+id/news_btn"
                 android:layout_width="186dp"
@@ -49,6 +70,15 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:src="@drawable/n" />
+
+            <TextView
+                android:id="@+id/news_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Lastest News"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
             <ImageButton
                 android:id="@+id/history_btn"
@@ -59,6 +89,15 @@
                 android:layout_marginEnd="0dp"
                 android:src="@drawable/s" />
 
+            <TextView
+                android:id="@+id/history_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="History"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
             <ImageButton
                 android:id="@+id/calcalory_btn"
                 android:layout_width="186dp"
@@ -66,6 +105,14 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:src="@drawable/aa" />
+
+            <TextView
+                android:id="@+id/calcalory_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate Calories"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
             <ImageButton
                 android:id="@+id/info_btn"
@@ -75,49 +122,12 @@
                 android:src="@drawable/i" />
 
             <TextView
-                android:id="@+id/signUp_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="36dp"
-                android:text="Sign Up a Class"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/history_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="History"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/calcalory_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Calculate Calories"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/calbmi_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="44dp"
-                android:layout_marginTop="2dp"
-                android:text="Calculate BMI"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/news_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="44dp"
-                android:text="Lastest News"
-                android:textSize="24sp" />
-
-            <TextView
                 android:id="@+id/info_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
                 android:text="Center Info"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
         </GridLayout>

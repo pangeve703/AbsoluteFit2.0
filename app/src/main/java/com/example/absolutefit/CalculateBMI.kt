@@ -33,12 +33,7 @@ class CalculateBMI : AppCompatActivity() {
         setContentView(R.layout.activity_calculate_bmi)
         val toolbar: Toolbar = findViewById(R.id.toolbar1)
         setSupportActionBar(toolbar)
-        val reportBtn : Button = findViewById(R.id.report_btn) as Button
-        reportBtn.setOnClickListener(){
-            Toast.makeText(this@CalculateBMI, "TESTING BUTTON CLICK 2", Toast.LENGTH_SHORT).show()
-            val intentGoToProgressReport = Intent(this,ProgressReport::class.java)
-            startActivity(intentGoToProgressReport)
-        }
+
 
         val calBMIBtn:Button = findViewById(R.id.calBMI_btn) as Button
         calBMIBtn.setOnClickListener(){
